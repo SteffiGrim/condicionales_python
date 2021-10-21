@@ -33,3 +33,70 @@ contenido.
 
 print('Ejercicios de práctica con cadenas')
 # Empezar aquí la resolución del ejercicio
+
+palabra_1 = str(input('Ingrese la primera palabra:\n'))
+palabra_2 = str(input('Ingrese la segunda palabra:\n'))
+palabra_3 = str(input('Ingrese la tercer palabra:\n'))
+print("1 - Ordenar por orden alfabético ")
+print("2 - Ordenar por cantidad de letras")
+opcion = int(input("ingrese opcion: "))
+if(opcion == 1):
+    if(palabra_1 > palabra_2):
+        if(palabra_1 > palabra_3):
+            if(palabra_2 > palabra_3):
+                print(palabra_1)
+                print(palabra_2)
+                print(palabra_3)
+            else:
+                print(palabra_1)
+                print(palabra_3)
+                print(palabra_2)
+        else:
+            print(palabra_3)
+            print(palabra_1)
+            print(palabra_2)
+    else:
+        if(palabra_2 > palabra_3):
+            if(palabra_1 < palabra_3):
+                
+                print(palabra_2)
+                print(palabra_3)
+                print(palabra_1)
+            else:
+                print(palabra_2)
+                print(palabra_1)
+                print(palabra_3)
+        else:
+            print(palabra_3)
+            print(palabra_2)
+            print(palabra_1)
+
+if(opcion == 2):
+    if(len(palabra_1) > len(palabra_2)):
+        if(len(palabra_1) > len(palabra_3)):
+            if(len(palabra_2) > len(palabra_3)):
+                print(palabra_1)
+                print(palabra_2)
+                print(palabra_3)
+            else:
+                print(palabra_1)
+                print(palabra_3)
+                print(palabra_2)
+        else:
+            print(palabra_3)
+            print(palabra_1)
+            print(palabra_2)
+    else:
+        if(len(palabra_2) > len(palabra_3)):
+            if(len(palabra_1) < len(palabra_3)):
+                print(palabra_2)
+                print(palabra_3)
+                print(palabra_1)
+            else:
+                print(palabra_2)
+                print(palabra_1)
+                print(palabra_3)
+        else:
+            print(palabra_3)
+            print(palabra_2)
+            print(palabra_1)
